@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(-45deg, #f0f8ff, #dfe6e9, #c7ecee, #a29bfe);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+    color: #333;
+    padding: 40px 20px;
+  }
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #4b6584;
+  }
+  
+  header p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Adicionado para suavizar o hover */
+  }
+  
+  form:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+  }
+  
+  label {
+    display: block;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #34495e;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #4b7bec;
+    outline: none;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    padding: 12px 20px;
+    margin-top: 25px;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"] {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  input[type="reset"] {
+    background-color: #e67e22;
+    color: white;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #27ae60;
+  }
+  
+  input[type="reset"]:hover {
+    background-color: #d35400;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #95a5a6;
+    font-size: 0.9rem;
+  }
